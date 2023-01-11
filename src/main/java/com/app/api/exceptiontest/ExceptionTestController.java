@@ -16,7 +16,7 @@ import java.util.prefs.BackingStoreException;
 @RestController
 @RequestMapping("/api/exception")
 public class ExceptionTestController {
-
+//
     @GetMapping("/bind-exception-test")
     public String bindExceptionTest(@Valid BindExceptionDto bindExceptionDto) { // valid조건 무시시 오류
         return "Ok";
