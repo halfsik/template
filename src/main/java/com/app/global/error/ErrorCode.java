@@ -4,9 +4,10 @@ import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
 @Getter
-public class ErrorCode
+public enum ErrorCode
 {
-    ;
+    TEST(HttpStatus.INTERNAL_SERVER_ERROR,"001","비즈니스 에러");
+
     ErrorCode(HttpStatus httpStatus, String errorCode, String message) {
         this.httpStatus = httpStatus;
         this.errorCode = errorCode;
