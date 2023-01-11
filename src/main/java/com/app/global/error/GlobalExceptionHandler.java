@@ -13,7 +13,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 
 @Slf4j
 @RestControllerAdvice
-public class GlobalExceptionHanlder {
+public class GlobalExceptionHandler {
     /**
      * javax.validation.Valid 또는 @Validated binding error가 발생할 경우
      */

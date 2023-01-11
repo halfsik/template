@@ -37,12 +37,12 @@ public class ErrorResponse {
                 sb.append(", ");
             }else{
                 isFirst = false;
-                sb.append("[");
-                sb.append(fieldError.getField());
-                sb.append("]");
-                sb.append(fieldError.getDefaultMessage());
 
             }
+            sb.append("[");
+            sb.append(fieldError.getField());
+            sb.append("]");
+            sb.append(fieldError.getDefaultMessage());
         }
 
         return sb.toString();
